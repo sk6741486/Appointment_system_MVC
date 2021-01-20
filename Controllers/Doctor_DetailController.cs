@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Appointment_system_MVC.Data;
 using Appointment_system_MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Appointment_system_MVC.Controllers
 {
@@ -42,7 +43,7 @@ namespace Appointment_system_MVC.Controllers
 
             return View(doctor_Detail);
         }
-
+        [Authorize]
         // GET: Doctor_Detail/Create
         public IActionResult Create()
         {
@@ -64,7 +65,7 @@ namespace Appointment_system_MVC.Controllers
             }
             return View(doctor_Detail);
         }
-
+        [Authorize]
         // GET: Doctor_Detail/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -115,7 +116,7 @@ namespace Appointment_system_MVC.Controllers
             }
             return View(doctor_Detail);
         }
-
+        [Authorize]
         // GET: Doctor_Detail/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
