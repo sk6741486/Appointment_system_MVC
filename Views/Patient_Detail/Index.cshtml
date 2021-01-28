@@ -5,6 +5,30 @@
 }
 
 <h1>Index</h1>
+<body>
+    <div class="text-center">
+        <!--code to keep the heading in the center-->
+        <header>
+            <!--z-index codeto display image on the doctordetail page behind the text-->
+            <style>
+                img {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    z-index: -1;
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover
+                }
+            </style>
+        </header>
+        <img src="~/img/patientnew.jpg" />
+
+        <!--code for show the image and increse the size of image-->
+    </div>
+</body>
 
 <p>
     <a asp-action="Create">Create New</a>

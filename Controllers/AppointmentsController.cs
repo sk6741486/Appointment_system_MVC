@@ -11,7 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Appointment_system_MVC.Controllers
 {
-    [Authorize]
+ 
+    [Authorize] 
     public class AppointmentsController : Controller
     {
         private readonly Appointment_system_MVCContext _context;
